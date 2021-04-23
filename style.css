@@ -1,0 +1,399 @@
+@charset "UTF-8";
+:root
+{
+    --bluecolor:#10848c;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar
+{
+    /* background: #131313; */
+    padding: 1rem 6rem;
+}
+.navbar .navbar-brand
+{
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color:var(--bluecolor);
+    border-bottom: 2px solid var(--bluecolor);
+
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a
+{
+    color: white;
+    font-size: 1.1rem;
+    padding: 0 1.1rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid transparent;
+
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover
+{
+    color:#10848c;
+    border-bottom: 1px solid var(--bluecolor);
+    transition: 0.5s;
+}
+
+
+#navbarSupportedContent >button
+{
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    letter-spacing: 1px;
+    color: white;
+    border: 2px solid var(--bluecolor);
+}
+
+#navbarSupportedContent >button:hover
+{
+    background-color: var(--bluecolor) ;
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+.scrolling-active
+{
+    background-color: aliceblue;
+}
+.mid
+{
+    width: 100%;
+    /* height: 100vh; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.mid video
+{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+}
+
+.mid .hero
+{
+    position: relative;
+}
+
+
+.mid .hero p{
+    
+    font-size: 1.3rem;
+    letter-spacing: 0.2px;
+    padding: 1.1rem;
+}
+
+.mid .hero a
+{
+   
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.6rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color:white;
+    border-radius: 0.25rem;
+    border:1px solid white;
+    background: transparent;
+}
+
+.mid .hero a:hover {
+    
+    color: white;
+    background: var(--bluecolor);
+    transition: 0.5s;
+} 
+
+/* About */
+.about
+{
+        
+}
+.about .text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.about .text h6
+{
+    font-weight: 800;
+    font-size: 1.5rem;
+    color:var(--bluecolor   );
+    letter-spacing: 1px;
+}
+
+.about .text h2
+{
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color:#131313;
+
+}
+
+.about .text p
+{
+    /* color: white; */
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.about .text a
+{
+    background: transparent;
+    padding: 0.6rem 1.4rem;
+    color: var(--bluecolor);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    border: 2px solid var(--bluecolor);
+    
+}
+
+.about .text a:hover
+{
+    color:white;
+    background:var(--bluecolor);
+   
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.about img
+{
+    box-shadow: 0 0.5px 8px var(--bluecolor);
+    border-radius: 0.25rem;
+}
+
+.about img:hover
+{
+    transform: translateY(-5%);
+    transition: 0.5s;
+}
+/* Login section */
+
+.login img
+{
+    box-shadow: 0 0.5px 8px var(--bluecolor);
+
+    border-radius: 0.25rem;
+
+}
+.login img:hover
+{
+    transform: translateY(-5%);
+    transition: 0.5S;
+}
+.login .text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    
+    
+}
+
+.login .text h6
+{
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--bluecolor);
+}
+
+.login .text h2
+{
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+
+}
+
+.login .text p
+{
+    /* color: white; */
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.login .text a
+{
+    
+    background: transparent;
+    padding: 0.6rem 1.4rem;
+    color: var(--bluecolor);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.25rem;
+
+    border: 2px solid var(--bluecolor);
+}
+.login .text a:hover
+{
+    color:white;
+    border: 2px solid transparent;
+    background:  #096f6e;
+    transition: 0.5s;
+    
+}
+
+
+
+
+.service h2
+{
+    color: var(--bluecolor);
+    font-weight: 600;
+    font-size: 2.9rem;
+    letter-spacing: 1px;
+   
+}
+
+.box .box1
+
+{
+    /* border: 1px solid var(--bluecolor) ; */
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+.box .box1 img
+{
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5px 4px var(--bluecolor);
+   
+}
+
+.box .box1 img:hover
+{
+    transform: translateY(-5%);
+    transition: 0.5s;
+}
+
+.account .text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    
+    
+}
+
+.account h6
+{
+   
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--bluecolor);
+}
+
+.account h2
+
+{
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.account a
+{
+    background: transparent;
+    padding: 0.6rem 1.4rem;
+    color: var(--bluecolor);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.25rem;
+
+    border: 2px solid var(--bluecolor);
+}
+
+.account a:hover
+{
+    color:white;
+    border: 2px solid transparent;
+    background:  #096f6e;
+    transition: 0.5s;
+    
+}
+
+.account-img img
+{
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5px 4px var(--bluecolor);
+    height: 50vh;
+
+}
+.account-img img:hover
+{
+    
+    transform: translateY(-5%);
+    transition: 0.5s;
+}
+
+
+body > footer > div > div.card-body > a
+{
+    background: transparent;
+    padding: 0.6rem 1.4rem;
+    color: var(--bluecolor);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0.25rem;
+
+    border: 2px solid var(--bluecolor);
+}
+body > footer > div > div.card-body > a:hover
+{
+    color:white;
+    border: 2px solid transparent;
+    background:  #096f6e;
+    transition: 0.5s;
+}
+
+
+/* footer */
+.card .card-body h5
+{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+.card .card-body a{
+    color:white
+}
+.card .card-body p
+{
+    color: white;
+}
+.card
+{
+    background: #131313;
+}
